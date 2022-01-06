@@ -6,9 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class MemoryOutApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(MemoryOutApplication.class, args);
-		HeapMemoryOut heapMemoryOut = new HeapMemoryOut();
+	public static void main(String[] args) throws Exception {
+		DirectMemoryOut heapMemoryOut = new DirectMemoryOut();
 		heapMemoryOut.run();
 	}
 
